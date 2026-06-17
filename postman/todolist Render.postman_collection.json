@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "bd4798f3-2d6d-4341-91a5-56be68ae035e",
+    "name": "todolist Render",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53068920",
+    "_collection_link": "https://go.postman.co/collection/53068920-bd4798f3-2d6d-4341-91a5-56be68ae035e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "取得待辦清單",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "刪除所有待辦事項",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://todos-q9ey.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todos-q9ey",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "新增一筆待辦事項",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\":\"我是代辦事項1\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://todos-q9ey.onrender.com/todos",
+          "protocol": "https",
+          "host": [
+            "todos-q9ey",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除一筆待辦事項",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://todos-q9ey.onrender.com/todos/58847803-6db1-4373-92f3-4405dc8161ed",
+          "protocol": "https",
+          "host": [
+            "todos-q9ey",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos",
+            "58847803-6db1-4373-92f3-4405dc8161ed"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "編輯一筆待辦事項",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\":\"我是代辦事項10\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://todos-q9ey.onrender.com/todos/df090ae3-1614-4ceb-8337-598b2087966e",
+          "protocol": "https",
+          "host": [
+            "todos-q9ey",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "todos",
+            "df090ae3-1614-4ceb-8337-598b2087966e"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
